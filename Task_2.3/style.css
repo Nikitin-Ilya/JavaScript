@@ -1,0 +1,113 @@
+@charset "UTF-8";
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #548092;
+}
+
+.wrapper {
+  margin: 50px auto;
+  max-width: 700px;
+  width: 80%;
+  border: 10px;
+}
+.wrapper .header {
+  background-color: #EFF0F1;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+  border-bottom: 1px solid #E0E0E0;
+  color: #666666;
+}
+.wrapper .main {
+  padding: 20px;
+  background-color: #FEFEFE;
+  font-weight: 500;
+}
+.wrapper .main .row {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  width: 100%;
+}
+.wrapper .main .row .container {
+  padding: 5px;
+  width: 100%;
+}
+.wrapper .main .row .container .income-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.wrapper .main .row .selector {
+  color: #666666;
+  font-weight: 500;
+  font-size: 12px;
+}
+.wrapper .main .row .selector label {
+  color: #00BB92;
+  font-weight: 600;
+  font-size: 16px;
+}
+.wrapper .main .row .selector input {
+  width: auto;
+}
+.wrapper .main input, .wrapper .main textarea, .wrapper .main select {
+  width: 100%;
+  padding: 5px 10px;
+  color: #666666;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+}
+.wrapper .main label {
+  color: #00BB92;
+  font-weight: 600;
+}
+.wrapper .main output {
+  background-color: #00BB92;
+  color: #FEFEFE;
+  padding: 3px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.wrapper .footer {
+  background-color: #EFF0F1;
+  text-align: right;
+  padding: 10px 30px;
+  border-radius: 0 0 10px 10px;
+  border-top: 1px solid #E0E0E0;
+}
+.wrapper .footer .create-button {
+  background-color: #00BB92;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 500;
+  color: #EFF0F1;
+}
+
+/* Это стили для кастомных сообщений об ошибке */
+.error {
+  display: none;
+  width: 100%;
+  padding: 0;
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.error.active {
+  display: block;
+  padding: 0.3em;
+}

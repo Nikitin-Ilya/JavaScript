@@ -1,0 +1,127 @@
+$background-color: #548092;
+$header-color: #EFF0F1;
+$main-background-color: #FEFEFE;
+$label-color: #00BB92;
+$text-color: #666666;
+$border-color: #E0E0E0;
+
+*{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: $background-color;
+}
+
+.wrapper{
+  margin: 50px auto;
+  max-width: 700px;
+  width: 80%;
+  border: 10px;
+
+  .header{
+    background-color: $header-color;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px solid $border-color;
+    color: $text-color;
+  }
+
+  .main{
+    padding: 20px;
+    background-color: $main-background-color;
+    font-weight: 500;
+
+    .row{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      column-gap: 10px;
+      width: 100%;
+
+      .container{
+        padding: 5px;
+        width: 100%;
+
+        .income-box{
+          display: flex;
+        }
+      }
+
+      .selector{
+        color: $text-color;
+        font-weight: 500;
+        font-size: 12px;
+        
+        label{
+          color: $label-color;
+          font-weight: 600;
+          font-size: 16px;
+        }
+
+        input{
+          width:auto;
+        }
+      }
+    }
+    
+    input, textarea, select{
+      width: 100%;
+      padding: 5px 10px;
+      color: $text-color;
+      border: 1px solid $border-color;
+      border-radius: 5px;
+    }
+
+    label{
+      color: $label-color;
+      font-weight: 600;
+    }
+
+    output{
+      background-color: $label-color;
+      color: $main-background-color;
+      padding: 3px;
+      border-radius: 5px;
+      margin-left: 10px;
+    }
+  }
+
+  .footer{
+    background-color: $header-color;
+    text-align: right;
+    padding: 10px 30px;
+    border-radius: 0 0 10px 10px;
+    border-top: 1px solid $border-color;
+
+    .create-button{
+      background-color: $label-color;
+      padding: 10px 20px;
+      border: 0;
+      border-radius: 5px;
+      font-weight: 500;
+      color: $header-color;
+    }
+  }
+}
+
+/* Это стили для кастомных сообщений об ошибке */
+.error {
+  display: none;
+  width  : 100%;
+  padding: 0;
+
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+
+  box-sizing: border-box;
+}
+
+.error.active {
+  display: block;
+  padding: 0.3em;
+}
