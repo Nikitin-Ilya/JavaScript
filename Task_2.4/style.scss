@@ -1,0 +1,66 @@
+$background-color: #4299E1;
+$widget-header-color: #1a202cda;
+$widget-text-color: #FFF;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: $background-color;
+}
+
+.container{
+  margin: 200px auto;
+}
+
+input{
+  width: 350px;
+  padding: 15px;
+  border: 0;
+  border-radius: 7px;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.widget{
+  display: none;
+  border-radius: 7px;
+  background-color: $widget-header-color;
+  min-width: 350px;
+  padding: 40px 30px;
+  color: red;
+  font-size: 18px;
+}
+
+.active{
+  display: block;
+}
+
+.whether-now__main {
+  color: $widget-text-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .whether-now__temperature {
+    font-weight: 600;
+    font-size: 40px;
+    .whether-now__feels-like {
+      font-weight: 400;
+      font-size: 18px;
+    }
+  }
+  .whether-now__status {
+    font-weight: 600;
+    font-size: 18px;
+    .whether-now__city {
+      font-weight: 400;
+    }
+  }
+}
