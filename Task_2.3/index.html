@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Task 1.3</title>
+</head>
+<body>
+
+  <div class="wrapper">
+    <form novalidate>
+      <div class="header">
+        <h1>Create Account</h1>
+      </div>
+
+      <div class="main">
+      
+        <div class="row">
+          <div class="container">
+            <label for="firstName">First name *</label><br>
+            <input type="text" placeholder="enter your first name" name="firstName" id="firstName" formnovalidate>
+            <div class="error firstName">This field must not be empty.</div>
+          </div>
+  
+          <div class="container">
+            <label for="lastName">Last name</label><br>
+              <input type="text" placeholder="enter your last name" name="lastName">
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="container">
+            <label for="email">Email *</label><br>
+            <input type="text" placeholder="enter your email" name="email" id="email" formnovalidate>
+            <div class="error email">You need to enter an e-mail address.</div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="container">
+            <label for="password">Password *</label><br>
+            <input type="password" placeholder="enter your password" name="password" id="password" formnovalidate>
+            <div class="error password">This field must not be empty.</div>
+          </div>
+  
+          <div class="container">
+            <label for="confirmPassword">Confirm Password *</label><br>
+            <input type="password" placeholder="enter your password again" name="confirmPassword" id="confirmPassword" formnovalidate>
+            <div class="error confirmPassword">This field must not be empty.</div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="container selector">
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female
+          </div>
+
+          <div class="container selector">
+            <label>Hobbies:</label><br>
+            <input type="checkbox" name="hobbies" value="Music">Music
+            <input type="checkbox" name="hobbies" value="Sports">Sports
+            <input type="checkbox" name="hobbies" value="Travel">Travel
+            <input type="checkbox" name="hobbies" value="Movies">Movies
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="container">
+            <label for="source-income">Source of Income</label><br>
+            <select class="option" id="source-income">
+              <option>Employed</option>
+              <option>Earned Income</option>
+              <option>Profit Income</option>
+              <option>Interest Income</option>
+              <option>Dividend Income</option>
+              <option>Rental Income</option>
+              <option>Capital Gains Income</option>
+              <option>Royalty Income</option>
+            </select>
+          </div>
+
+          <div class="container">
+            <label for="income">Income</label><br>
+            <div class="income-box">
+              <input type="range" name="income" min="0" max="999" value="20" oninput="this.nextElementSibling.value = this.value + 'K'"/>
+              <output class="income-output">20K</output>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="container">
+            <label for="uplaod-foto">Upload Profile Picture</label><br>
+            <input type="file" name="upload-foto"/>
+          </div>
+
+          <div class="container">
+            <label for="age">Age</label><br>
+            <input type="number" name="age" value="18"/>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="container">
+            <label for="bio">Bio</label><br>
+            <textarea class="bio" name="bio" rows="5"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <input type="submit" value="Create" class="create-button"/>
+      </div>
+      
+    </form>
+  
+  </div>
+  <script src="/main.js"></script>
+</body>
+</html>
