@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  background-color: #4299E1;
+}
+
+.container {
+  margin: 70px auto;
+}
+
+input {
+  width: 350px;
+  padding: 15px;
+  border: 0;
+  border-radius: 7px;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.weather-forecast-now {
+  display: none;
+  border-radius: 7px 7px 0 0;
+  background-color: rgba(26, 32, 44, 0.8549019608);
+  min-width: 350px;
+  padding: 40px 30px;
+  color: red;
+  font-size: 16px;
+}
+
+.whether-now__main {
+  color: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.whether-now__main .whether-now__temperature {
+  font-weight: 600;
+  font-size: 36px;
+}
+.whether-now__main .whether-now__temperature .whether-now__feels-like {
+  font-weight: 400;
+  font-size: 16px;
+}
+.whether-now__main .whether-now__status {
+  font-weight: 600;
+  font-size: 16px;
+}
+.whether-now__main .whether-now__status .whether-now__city {
+  font-weight: 400;
+}
+
+.weather-forecast {
+  display: none;
+  border-radius: 0 0 7px 7px;
+  background-color: rgba(45, 55, 72, 0.8352941176);
+  min-width: 350px;
+  padding: 2px 30px 40px 30px;
+  color: red;
+  font-size: 18px;
+}
+
+.whetherForecast {
+  margin-top: 20px;
+  color: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+}
+.whetherForecast .whetherForecast__day {
+  text-transform: uppercase;
+}
+.active {
+  display: block;
+}
