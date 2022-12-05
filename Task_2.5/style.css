@@ -1,0 +1,122 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: #063251;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background-color: #F1F5F8;
+}
+
+.container {
+  padding: 50px 40px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px rgba(6, 50, 81, 0.3176470588);
+          box-shadow: 0px 0px 10px rgba(6, 50, 81, 0.3176470588);
+  background-color: #fff;
+}
+
+.header .header__title {
+  text-align: center;
+}
+.header .header__inputs {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header .header__inputs .header__input {
+  background-color: #F1F5F8;
+  width: 350px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-radius: 7px 0 0 7px;
+  font-size: 20px;
+}
+.header .header__inputs .header__button {
+  background-color: #A5D5F8;
+  border-radius: 0 7px 7px 0;
+  padding: 15px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.item-list {
+  margin-top: 40px;
+}
+.item-list .item-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.item-list .item-list__item .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.item-list .item-list__item .icons .item_done {
+  width: 24px;
+  height: 24px;
+  margin-right: -24px;
+  opacity: 0;
+  cursor: pointer;
+}
+.item-list .item-list__item .icons .item_done ~ label::before {
+  content: "✔";
+  text-align: center;
+  color: white;
+  line-height: 1em;
+  width: 1em;
+  height: 1em;
+  border: 2px solid #6BE675;
+  border-radius: 0.25em;
+  display: inline-block;
+  outline: none;
+}
+.item-list .item-list__item .icons .item_done:checked ~ label::before {
+  color: #6BE675;
+}
+.item-list .item-list__item .icons .trash_icon {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.footer .footer__clear-items {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: #E76E6E;
+  cursor: pointer;
+}
