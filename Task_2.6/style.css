@@ -1,0 +1,145 @@
+@import "./fontawesome/css/all.css";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+}
+
+.wrapper {
+  background-color: #FAFAFA;
+  min-height: 100vh;
+}
+
+.header {
+  padding: 20px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #FFF;
+}
+.header__title {
+  font-weight: 600;
+}
+.header__mode {
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #FFF;
+  border: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.search {
+  margin: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.search__input, .search__select {
+  width: 245px;
+  font-size: 14px;
+  padding: 15px 40px;
+  border: 0;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 10px rgba(66, 66, 66, 0.3176470588);
+          box-shadow: 0px 0px 10px rgba(66, 66, 66, 0.3176470588);
+}
+.search__select {
+  width: 210px;
+}
+
+.countries-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 40px 1fr 40px 1fr 40px 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+.countries-list .country {
+  background-color: #FFF;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 10px rgba(66, 66, 66, 0.3176470588);
+          box-shadow: 0px 0px 10px rgba(66, 66, 66, 0.3176470588);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.countries-list .country img {
+  width: 270px;
+  height: 180px;
+}
+.countries-list .country .country__info {
+  padding: 30px;
+}
+.countries-list .country .country__info .country__name {
+  margin-bottom: 20px;
+}
+.countries-list .country .country__info div {
+  margin-top: 5px;
+  font-weight: 300;
+}
+.countries-list .country .country__info div span {
+  font-weight: 500;
+}
+
+.light-dark {
+  background-color: #323234;
+  color: #FFF;
+}
+
+.dark .wrapper {
+  background-color: #1C1C1D;
+}
+.dark .header {
+  background-color: #323234;
+  color: #FFF;
+}
+.dark .header__title h1 {
+  color: #FFF;
+}
+.dark .header__mode {
+  background-color: #323234;
+  color: #FFF;
+}
+.dark .header__mode i {
+  color: #FFF;
+}
+.dark .search__input, .dark .search__select {
+  background-color: #323234;
+  color: #fff;
+}
+.dark .country {
+  background-color: #323234;
+}
+.dark .country .country__info {
+  color: #fff;
+}
+.dark .country .country__info .country__name h3 {
+  color: #fff;
+}
+.dark .country .country__info div {
+  color: #fff;
+}
+.dark .country .country__info div span {
+  color: #fff;
+}
