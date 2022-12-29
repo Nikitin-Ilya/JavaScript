@@ -1,0 +1,100 @@
+$background-color: #4299E1;
+$widget-header-color: #1a202cda;
+$widget-main-color: #2d3748d5;
+$widget-text-color: #FFF;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: $background-color;
+}
+
+.container{
+  margin: 70px auto;
+}
+
+input{
+  width: 350px;
+  padding: 15px;
+  border: 0;
+  border-radius: 7px;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.weather-forecast-now{
+  display: none;
+  border-radius: 7px 7px 0 0;
+  background-color: $widget-header-color;
+  min-width: 350px;
+  padding: 40px 30px;
+  color: red;
+  font-size: 16px;
+}
+
+.whether-now__main {
+  color: $widget-text-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .whether-now__temperature {
+    font-weight: 600;
+    font-size: 36px;
+    .whether-now__feels-like {
+      font-weight: 400;
+      font-size: 16px;
+    }
+  }
+  .whether-now__status {
+    font-weight: 600;
+    font-size: 16px;
+    .whether-now__city {
+      font-weight: 400;
+    }
+  }
+}
+
+.weather-forecast{
+  display: none;
+  border-radius: 0 0 7px 7px;
+  background-color: $widget-main-color;
+  min-width: 350px;
+  padding: 2px 30px 40px 30px;
+  color: red;
+  font-size: 18px;
+}
+
+.whetherForecast {
+  margin-top: 20px;
+  color: $widget-text-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  .whetherForecast__day {
+    text-transform: uppercase;
+  }
+  .whetherForecast-icon {
+
+  }
+  .whetherForecast__status {
+
+  }
+  .whetherForecast__temperature {
+
+    .whetherForecast__temp-min {
+    }
+  }
+}
+
+.active{
+  display: block;
+}

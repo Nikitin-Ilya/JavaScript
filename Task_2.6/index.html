@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Task 2.6</title>
+</head>
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="header__title">
+        <h1>Where in the world?</h1>
+      </div>
+      <button class="header__mode" id="header__mode">
+          <i class="fas fa-moon"></i> Dark Mode
+      </button>
+    </header>
+
+    <div class="container">
+      <div class="search">
+        <input type="search" class="search__input" id="search__input" placeholder="Search for a country..."/>
+        <select class="search__select" id="search__select" name="region[]" onchange="filterByRegion(this)">
+          <option selected disabled hidden>Filter by Region</option>
+          <option class="region" value="All">All</option>
+          <option class="region" value="Africa">Africa</option>
+          <option class="region" value="Americas">Americas</option>
+          <option class="region" value="Asia">Asia</option>
+          <option class="region" value="Europe">Europe</option>
+          <option class="region" value="Oceania">Oceania</option>
+        </select>
+      </div>
+
+      <div class="countries-list" id="countries-list"></div>
+    </div>
+
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
