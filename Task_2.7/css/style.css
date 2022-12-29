@@ -1,0 +1,203 @@
+@import "../fontawesome/css/all.css"; /* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:focus,
+:active {
+  /*outline: none;*/
+}
+
+a:focus,
+a:active {
+  /* outline: none;*/
+}
+
+/* Links */
+a, a:link, a:visited {
+  /* color: inherit; */
+  text-decoration: none;
+  /* display: inline-block; */
+}
+
+a:hover {
+  /* color: inherit; */
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  background: url("../img/background-blur4.png") no-repeat top center scroll;
+  background-size: 100%;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #FFF;
+  text-shadow: 0 0 10px #000;
+}
+.header__logo a {
+  color: #FFF;
+  font-family: "Oleo Script Swash Caps", cursive;
+  font-size: 36px;
+}
+.header__right-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__pages, .header__shopping-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+}
+.header__pages a, .header__shopping-cart a {
+  margin-left: 30px;
+  color: #FFF;
+}
+.header__pages a, .header__pages i, .header__shopping-cart a, .header__shopping-cart i {
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.header__pages a:hover, .header__pages i:hover, .header__shopping-cart a:hover, .header__shopping-cart i:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.header__shopping-cart {
+  margin-left: 70px;
+  font-size: 26px;
+}
+
+.banner {
+  margin-top: 25vh;
+  background-color: rgba(0, 0, 0, 0.529);
+  color: #FFF;
+  font-size: 56px;
+  font-weight: 400px;
+  display: inline-block;
+  padding: 20px 40px;
+  -webkit-box-shadow: 0 0 20px rgb(0, 0, 0);
+          box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+.banner .banner__title {
+  font-family: "Oleo Script Swash Caps", cursive;
+}
+.banner .banner__subtitle {
+  font-family: "Oleo Script Swash Caps", cursive;
+  font-weight: 500;
+  font-size: 36px;
+}
+.banner .banner__show-suits {
+  padding: 5px 10px;
+  font-weight: 500;
+  font-size: 18px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.529);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.529);
+}
+
+.feautured {
+  margin-top: 100vh;
+  color: #FFF;
+}
