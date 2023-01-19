@@ -10,22 +10,21 @@
   <title>clothing store</title>
 </head>
 <body>
-
   <div class="wrapper">
     <div class="container">
       <header class="header">
         <div class="header__logo">
-          <a href="http://">Clothing store</a>
+          <a href="#">Clothing store</a>
         </div>
 
         <div class="header__right-part">
           <div class="header__pages">
-            <a href="http://">Home</a>
-            <a href="http://">Products</a>
-            <a href="http://">About</a>
+            <a href="#">Home</a>
+            <a href="./products/products.html">Products</a>
+            <a href="./about/about.html">About</a>
           </div>
 
-          <button class="header__shopping-cart">
+          <button class="header__shopping-cart" onclick="openCart()">
             <i class="fa-solid fa-cart-shopping"></i>
           </button>
         </div>
@@ -35,26 +34,101 @@
       <div class="banner">
         <h1 class="banner__title">Master the art of classic fashion</h1>
         <h2 class="banner__subtitle">Choose your style</h2>
-        <button class="banner__show-suits">Show suits</button>
+        <a href="./products/products.html" class="banner__show-suits">Show suits</a>
       </div>
 
       <main class="feautured">
         <div class="feautured__title">Suits</div>
-
-        <div class="feautured_products">
-          <div class="feautured__item">
-            
-          </div>
-        </div>
-
+        <div class="feautured__products" id="feautured__products"></div>
+        <a href="./products/products.html" class="futured__all-products">ALL SUITS</a>
       </main>
 
-      <footer>
+    </div>
 
-      </footer>
+    <footer>
+      <div class="footer__container">
+        <div class="top-group">
+  
+          <div class="logo footer__logo"><p>Clothing store</p></div>
+  
+          <div class="links-list">
+            <div class="links-list__group">
+              <div class="links-list__title">
+                <p><a class="links-list__link" href="#">Home</a></p>
+                <div class="link-list__underline"></div>
+              </div>
+            </div>
+            <div class="links-list__group">
+              <div class="links-list__title">
+                <p><a class="links-list__link" href="./products/products.html">Products</a></p>
+                <div class="link-list__underline"></div>
+              </div>
+            </div>
+            <div class="links-list__group">
+              <div class="links-list__title">
+                <p><a class="links-list__link" href="./about/about.html">About</a></p>
+                <div class="link-list__underline"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="subscribe">
+            <form class="subscribe__form" action="">
+              <label class="subscribe__label" for="email">Subscribe to our newsletter and be the first to know about new suits</label>
+              <div class="subscribe__inputs">
+                <input class="subscribe__input-email" type="email" id="email"  size="30" placeholder="Email Address" required>
+                <input class="subscribe__button" type="submit" value="Subscribe">
+              </div>
+              
+            </form>
+          </div>
+        </div>
+      </div>
+  
+      <hr>
+  
+      <div class="footer__container">
+        <div class="copyrights-solial-networks">
+          <div class="copyright">
+            <p>Copyright © 2022. All rights reserved.</p>
+          </div>
+          <div class="social-networks">
+            <div class="social-networks__element">
+              <a href="#" class="social-networks__link">
+                <img src="./img/Instagram.svg" alt="Error!">
+              </a>
+            </div>
+            <div class="social-networks__element">
+              <a href="#" class="social-networks__link">
+                <img src="./img/Facebook.svg" alt="Error!">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
 
+  <div class="cart hide">
+    <div class="cart__container">
+      <button class="cart__close" onclick="openCart()">
+        <i class="fa-solid fa-x"></i>
+      </button>
+      <div class="cart__header">
+        <p>Your Bag</p>
+      </div>
+      <div class="cart__items">
+      </div>
+      <div class="cart__footer">
+        <div class="cart__total-price">
+          <p>Total: <span>$0</span></p>
+        </div>
+        <button class="cart__checkout">CHECKOUT</button>
+      </div>
     </div>
   </div>
 
+  <script src="./script/app.js"></script>
+  <script src="./script/cart.js"></script>
 </body>
 </html>
