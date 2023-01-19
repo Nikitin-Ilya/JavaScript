@@ -1,6 +1,5 @@
 @import "../fontawesome/css/all.css";
 @import "./reset.scss";
-@import "./general.scss";
 
 *{
   font-family: 'Montserrat', sans-serif;
@@ -9,28 +8,32 @@
   box-sizing: border-box;
 }
 
+html, body{
+	height: 100%;
+}
+
 .wrapper{
-  background: url("../img/background-blur4.png") no-repeat top center;
-  background-size: 100% 800px;
+	min-height: 100%;
 }
 
 .container{
   max-width: 1230px;
   padding: 0 20px;
-  margin: 0 auto;
+	margin: 0 auto;
 }
 
 .header{
+	//background-color: #fff;
   display: flex;
-  justify-content: space-between;
-  color: #FFF;
-  text-shadow: 0 0 10px #000;
+  color: #291c15;
+  //text-shadow: 0 0 10px #000;
   &__logo{
     a{
-      color: #FFF;
+      color: #291c15;
       font-family: 'Oleo Script Swash Caps', cursive;
       font-size: 36px;
     }
+		margin-right: auto;
   }
 
   &__right-part{
@@ -44,7 +47,7 @@
     font-size: 20px;
     a{
       margin-left: 30px;
-      color: #FFF;
+      color: #291c15;
     }
     a, i{
       transition: all 0.2s ease-out;
@@ -59,125 +62,6 @@
     font-size: 26px;
   }
 }
-
-.banner {
-  margin-top: 250px;
-  background-color: rgba(0, 0, 0, 0.529);
-  color: #FFF;
-  font-size: 56px;
-  font-weight: 400px;
-  display: inline-block;
-  padding: 20px 40px;
-  box-shadow: 0 0 20px rgb(0, 0, 0);
-  .banner__title {
-    font-family: 'Oleo Script Swash Caps', cursive;
-  }
-
-  .banner__subtitle {
-    font-family: 'Oleo Script Swash Caps', cursive;
-    font-weight: 500;
-    font-size: 36px;
-    
-  }
-
-  .banner__show-suits {
-    padding: 5px 10px;
-    font-weight: 500;
-    font-size: 18px;
-    border: 2px solid #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.529);
-    transition: all 0.2s ease-out;
-    color: #fff;
-  }
-
-  .banner__show-suits:hover {
-    transform: scale(1.1);
-  }
-}
-
-.feautured{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 300px 0 100px 0;
-  color: rgb(73, 60, 48);
-
-  .feautured__title{
-    font-family: 'Oleo Script Swash Caps', cursive;
-    font-size: 48px;
-    font-weight: 700;
-  }
-
-  .feautured__products{
-    margin: 20px 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 40px;
-  
-    .item{
-      background-color: #fff;
-      border-radius: 5px;
-      overflow: hidden;
-      box-shadow: 0px 0px 10px #42424251;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-  
-      img{
-        width: 270px;
-        height: 330px;
-      }
-  
-      .item__info{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-
-  
-        .item__name{
-          h3{
-            font-style: italic;
-            font-size: 18px;
-            font-weight: 600;
-          }
-          p{
-            margin-top: 10px;
-            color: rgb(97, 88, 79);
-            font-weight: 700;
-          }
-        }
-  
-        .item__buy{
-          font-size: 24px;
-          transition: all 0.2s ease-out;
-        }
-
-        .item__buy:hover{
-          transform: scale(1.2);
-        }
-      }
-    }
-  }
-
-  .futured__all-products{
-    font-size: 18px;
-    margin-top: 30px;
-    padding: 5px 20px;
-    font-weight: 600;
-    background-color: rgb(73, 60, 48);//#d79f50;
-    color: #FFF;
-    border: 0;
-    border-radius: 3px;
-    transition: all 0.2s ease-out;
-  }
-
-  .futured__all-products:hover{
-    background-color: #84612f;
-  }
-}
-
 
 
 footer{
@@ -293,4 +177,111 @@ footer{
 		}
 		
 	}
+}
+
+.cart{
+	display: flex;
+	justify-content: flex-end;
+	position: fixed;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.401);
+	&__container{
+		display: grid;
+		grid-template-rows: 30px 50px 1fr 80px;
+		padding: 10px;
+		width: 400px;
+		height: 100%;
+		background-color: #fff;
+		color: #291c15;
+		font-weight: 500;
+
+		.cart__close {
+			display: inline-block;
+			width: 26px;
+			font-size: 26px;
+		}
+		.cart__header {
+			p{
+				text-align: center;
+				font-family: 'Oleo Script Swash Caps', cursive;
+				font-size: 36px;
+				font-weight: 600;
+			}
+		}
+		.cart__items {
+
+
+			.cart-item {
+				margin-top: 20px;
+				min-width: 100%;
+				display: grid;
+				grid-template-columns: 100px 1fr;
+				
+				img{
+					width: 100px;
+					border-radius: 5px;
+				}
+
+				.cart-item__info {
+					padding: 0 20px;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+
+					.cart-item__name {
+					}
+					.cart-item__controls {
+						height: 90%;
+						display: flex;
+						flex-direction: column;
+						justify-content: space-between;
+						.cart-item__count{
+							.plus {
+							}
+							.cart-button {
+								font-size: 24px;
+							}
+							.amount {
+								text-align: center;
+							}
+							.minus {
+							}
+						}
+					}
+				}
+			}
+
+
+		}
+		.cart__footer {
+			display: flex;
+			flex-direction: column;
+
+			.cart__total-price {
+				text-align: center;
+				font-weight: 600;
+				p{
+					font-size: 22px;
+					span{
+						font-size: 24px;
+						font-family: 'Oleo Script Swash Caps', cursive;
+					}
+				}
+			}
+			.cart__checkout {
+				font-weight: 600;
+				color: #fff;
+				background-color: #291c15;
+				padding: 10px 30px;
+				border: 0;
+				border-radius: 4px;
+			}
+		}
+	}
+}
+
+.hide{
+	display: none;
 }
