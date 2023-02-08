@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "WOOL SUIT",
+    "brand": "GUCCI",
+    "price": 3250,
+    "image": "/img/suits/gucci1.avif"
+  },
+  { 
+    "id": 2,
+    "name": "WOOL SUIT",
+    "brand": "GUCCI",
+    "price": 2000,
+    "image": "/img/suits/gucci2.png"
+  }, 
+  { 
+    "id": 3,
+    "name": "PATCH CAP",
+    "brand": "PRADA",
+    "price": 100,
+    "image": "/img/suits/prada1.jpeg"
+  },
+  { 
+    "id": 4,
+    "name": "WOOL SUIT",
+    "brand": "PRADA",
+    "price": 2000,
+    "image": "/img/suits/prada2.jpeg"
+  }, 
+  { 
+    "id": 5,
+    "name": "WOOL SUIT",
+    "brand": "Louis Vuitton",
+    "price": 6000,
+    "image": "/img/suits/LV1.jpeg"
+  },
+  { 
+    "id": 6,
+    "name": "WOOL SUIT",
+    "brand": "Louis Vuitton",
+    "price": 6000,
+    "image": "/img/suits/LV2.jpeg"
+  }
+]

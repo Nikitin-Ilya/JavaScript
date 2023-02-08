@@ -1,0 +1,296 @@
+@import "../fontawesome/css/all.css";
+@import "./reset.scss";
+@import "./general.scss";
+
+*{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper{
+  background: url("../img/background-blur4.png") no-repeat top center;
+  background-size: 100% 800px;
+}
+
+.container{
+  max-width: 1230px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  color: #FFF;
+  text-shadow: 0 0 10px #000;
+  &__logo{
+    a{
+      color: #FFF;
+      font-family: 'Oleo Script Swash Caps', cursive;
+      font-size: 36px;
+    }
+  }
+
+  &__right-part{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__pages, &__shopping-cart{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    a{
+      margin-left: 30px;
+      color: #FFF;
+    }
+    a, i{
+      transition: all 0.2s ease-out;
+    }
+    a:hover, i:hover{
+      transform: scale(1.1);
+    }
+  }
+
+  &__shopping-cart{
+    margin-left: 70px;
+    font-size: 26px;
+  }
+}
+
+.banner {
+  margin-top: 250px;
+  background-color: rgba(0, 0, 0, 0.529);
+  color: #FFF;
+  font-size: 56px;
+  font-weight: 400px;
+  display: inline-block;
+  padding: 20px 40px;
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+  .banner__title {
+    font-family: 'Oleo Script Swash Caps', cursive;
+  }
+
+  .banner__subtitle {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-weight: 500;
+    font-size: 36px;
+    
+  }
+
+  .banner__show-suits {
+    padding: 5px 10px;
+    font-weight: 500;
+    font-size: 18px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.529);
+    transition: all 0.2s ease-out;
+    color: #fff;
+  }
+
+  .banner__show-suits:hover {
+    transform: scale(1.1);
+  }
+}
+
+.feautured{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 300px 0 100px 0;
+  color: rgb(73, 60, 48);
+
+  .feautured__title{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  .feautured__products{
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+  
+    .item{
+      background-color: #fff;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0px 0px 10px #42424251;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  
+      img{
+        width: 270px;
+        height: 330px;
+      }
+  
+      .item__info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+
+  
+        .item__name{
+          h3{
+            font-style: italic;
+            font-size: 18px;
+            font-weight: 600;
+          }
+          p{
+            margin-top: 10px;
+            color: rgb(97, 88, 79);
+            font-weight: 700;
+          }
+        }
+  
+        .item__buy{
+          font-size: 24px;
+          transition: all 0.2s ease-out;
+        }
+
+        .item__buy:hover{
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  .futured__all-products{
+    font-size: 18px;
+    margin-top: 30px;
+    padding: 5px 20px;
+    font-weight: 600;
+    background-color: rgb(73, 60, 48);//#d79f50;
+    color: #FFF;
+    border: 0;
+    border-radius: 3px;
+    transition: all 0.2s ease-out;
+  }
+
+  .futured__all-products:hover{
+    background-color: #84612f;
+  }
+}
+
+
+
+footer{
+	background-color: #291c15;
+  padding: 30px 0 15px 0;
+
+	hr{
+		background-color: #fff;
+		height: 1px;
+	}
+
+	.footer__container{
+		max-width: 1230px;
+		margin: 0 auto;
+		padding: 0 20px;
+
+		.top-group{
+			padding: 0 0 25px 0;
+			display: flex;
+			justify-content: space-between;
+
+			.footer__logo{
+				color: #fff;
+        p{
+          font-size: 36px;
+          font-family: 'Oleo Script Swash Caps', cursive;
+        }
+			}
+	
+			.links-list {
+				min-width: 300px;
+        margin-top: 15px;
+				display: flex;
+				justify-content: space-around;
+
+				.links-list__group {
+					.links-list__title {
+						display: inline-block;
+						font-weight: 500;
+						font-size: 18px;
+						line-height: 19px;
+						color: #fff;
+						margin-bottom: 35px;
+
+            .links-list__link {
+							font-weight: 400;
+							font-size: 14px;
+							line-height: 14px;
+							color: #fff;
+						}
+						.link-list__underline{
+							margin-top: 2px;
+							background-color: #fff;
+							height: 2px;
+							width: 100%;
+						}
+					}
+					
+				}
+			}
+
+			.subscribe {
+				max-width: 500px;
+				margin-left: 20px;
+
+				.subscribe__form {
+	
+					.subscribe__label {
+						font-weight: 400;
+						font-size: 16px;
+						line-height: 26px;
+						color: #fff;
+					}
+					.subscribe__input-email {
+						margin-top: 20px;
+						background-color: #fff;
+						border-radius: 3px;
+						width: 268px;
+						font-weight: 400;
+						font-size: 14px;
+						color: #000000;
+						padding: 10px 15px;
+					}
+					.subscribe__button{
+						background-color: #fff;
+						border-radius: 3px;
+						color: #291c15;
+						font-weight: 700;
+						font-size: 14px;
+						padding: 10px 15px;
+					}
+				}
+			}
+		}
+		
+		.copyrights-solial-networks {
+			margin: 15px 0 0 0;
+			display: flex;
+			justify-content: space-between;
+			.copyright {
+				font-weight: 700;
+				font-size: 10.41px;
+				line-height: 11px;
+				display: flex;
+				align-items: center;
+				color: #FFFFFF;
+			}
+			.social-networks {
+				width: 50px;
+				display: flex;
+				justify-content: space-between;
+			}
+		}
+		
+	}
+}

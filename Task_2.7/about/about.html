@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./about.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>clothing store</title>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="container">
+      <header class="header">
+        <div class="header__logo">
+          <a href="http://">Clothing store</a>
+        </div>
+
+        <div class="header__right-part">
+          <div class="header__pages">
+            <a href="../index.html">Home</a>
+            <a href="../products/products.html">Products</a>
+            <a href="../about/about.html">About</a>
+          </div>
+
+          <button class="header__shopping-cart" onclick="openCart()">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+
+      </header>
+    </div>
+
+    <div class="banner">
+      <div class="container">
+        <h1>Range of suits</h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <main class="content">
+        <h1 class="content__title">Our History</h1>
+        <p class="content__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error iste voluptas, vitae cumque eaque omnis aliquam ipsum, cum eligendi voluptates magnam itaque natus esse soluta. Temporibus eligendi odit dolor tempora natus vel veniam rerum deleniti distinctio possimus, magni eos sint quisquam perferendis quis soluta nam ea velit commodi qui ipsam quae hic! Velit, ad accusantium magnam ipsam consequuntur sed commodi quaerat ipsum nisi repellat nobis iste porro facere quibusdam exercitationem reiciendis assumenda quia neque? Provident molestias et blanditiis quod, nobis ipsum voluptate quisquam dolore autem dolor magnam harum voluptatibus ratione libero hic unde quia. Labore deleniti error aperiam doloremque voluptate.</p>
+      </main>
+    </div>
+    
+
+    <footer>
+      <div class="footer__container">
+        <div class="top-group">
+  
+          <div class="logo footer__logo"><p>Clothing store</p></div>
+  
+          <div class="links-list">
+            <div class="links-list__group">
+              <div class="links-list__title">
+                <p><a class="links-list__link" href="#">Home</a></p>
+                <div class="link-list__underline"></div>
+              </div>
+            </div>
+            <div class="links-list__group">
+              <div class="links-list__title">
+                <p><a class="links-list__link" href="#">Products</a></p>
+                <div class="link-list__underline"></div>
+              </div>
+            </div>
+            <div class="links-list__group">
+              <div class="links-list__title">
+                <p><a class="links-list__link" href="#">About</a></p>
+                <div class="link-list__underline"></div>
+              </div>
+            </div>
+            <div class="links-list__group">
+              <div class="links-list__title">
+                <p><a class="links-list__link" href="#">Cart</a></p>
+                <div class="link-list__underline"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="subscribe">
+            <form class="subscribe__form" action="">
+              <label class="subscribe__label" for="email">Subscribe to our newsletter and be the first to know about new suits</label>
+              <div class="subscribe__inputs">
+                <input class="subscribe__input-email" type="email" id="email"  size="30" placeholder="Email Address" required>
+                <input class="subscribe__button" type="submit" value="Subscribe">
+              </div>
+              
+            </form>
+          </div>
+        </div>
+      </div>
+  
+      <hr>
+  
+      <div class="footer__container">
+        <div class="copyrights-solial-networks">
+          <div class="copyright">
+            <p>Copyright © 2022. All rights reserved.</p>
+          </div>
+          <div class="social-networks">
+            <div class="social-networks__element">
+              <a href="#" class="social-networks__link">
+                <img src="../img/Instagram.svg" alt="Error!">
+              </a>
+            </div>
+            <div class="social-networks__element">
+              <a href="#" class="social-networks__link">
+                <img src="../img/Facebook.svg" alt="Error!">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="cart hide">
+    <div class="cart__container">
+      <button class="cart__close" onclick="openCart()">
+        <i class="fa-solid fa-x"></i>
+      </button>
+      <div class="cart__header">
+        <p>Your Bag</p>
+      </div>
+      <div class="cart__items">
+      </div>
+      <div class="cart__footer">
+        <div class="cart__total-price">
+          <p>Total: <span>$0</span></p>
+        </div>
+        <button class="cart__checkout">CHECKOUT</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../script/cart.js"></script>
+</body>
+</html>
