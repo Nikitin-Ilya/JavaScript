@@ -40,5 +40,12 @@
     "brand": "Louis Vuitton",
     "price": 6000,
     "image": "/img/suits/LV2.jpeg"
+  },
+  { 
+    "id": 7,
+    "name": "kjkj",
+    "brand": "Louis Vuittjjkhjn",
+    "price": 5000,
+    "image": "/img/suits/LV2.jpeg"
   }
 ]
